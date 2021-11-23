@@ -1,4 +1,4 @@
-import 'package:lvlup/domain/services/hive_service.dart';
+import 'package:todoLvlup/domain/services/hive_service.dart';
 
 class TaskListDataProvider {
   final _hiveService = HiveService.instance;

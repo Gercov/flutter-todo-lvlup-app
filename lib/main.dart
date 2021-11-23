@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
-import 'package:lvlup/Theme/app_colors.dart';
-import 'package:lvlup/domain/entity/task_model.dart';
-import 'package:lvlup/presenation/create.dart';
-import 'package:lvlup/presenation/home.dart';
+import 'package:todoLvlup/Theme/app_colors.dart';
+import 'package:todoLvlup/domain/entity/task_model.dart';
+import 'package:todoLvlup/presenation/create.dart';
+import 'package:todoLvlup/presenation/home.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lvlup/Theme/app_colors.dart';
-import 'package:lvlup/domain/entity/home_tabs_list.dart';
+import 'package:todoLvlup/Theme/app_colors.dart';
+import 'package:todoLvlup/domain/entity/home_tabs_list.dart';
 import 'package:provider/provider.dart';
 
 class HomeViewModelState {

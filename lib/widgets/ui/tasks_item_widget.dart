@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:lvlup/Theme/app_colors.dart';
-import 'package:lvlup/widgets/completed_tasks_list_screen.dart';
-import 'package:lvlup/widgets/tasks_list_screen.dart';
+import 'package:todoLvlup/Theme/app_colors.dart';
+import 'package:todoLvlup/widgets/completed_tasks_list_screen.dart';
+import 'package:todoLvlup/widgets/tasks_list_screen.dart';
 
 class TaskItemWidget extends StatelessWidget {
   final String taskText;

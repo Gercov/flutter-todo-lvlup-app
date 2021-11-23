@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lvlup/domain/entity/home_tab.dart';
-import 'package:lvlup/widgets/completed_tasks_list_screen.dart';
-import 'package:lvlup/widgets/tasks_list_screen.dart';
+import 'package:todoLvlup/domain/entity/home_tab.dart';
+import 'package:todoLvlup/widgets/completed_tasks_list_screen.dart';
+import 'package:todoLvlup/widgets/tasks_list_screen.dart';
 
 abstract class HomeTabsList {
   static final options = [

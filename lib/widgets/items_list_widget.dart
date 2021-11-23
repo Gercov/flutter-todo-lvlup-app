@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:lvlup/widgets/ui/tasks_item_widget.dart';
+import 'package:todoLvlup/widgets/ui/tasks_item_widget.dart';
 
 class ItemsListWidget extends StatelessWidget {
   final List tasksList;

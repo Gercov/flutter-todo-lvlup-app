@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'package:lvlup/domain/data_providers/task_list_provider.dart';
-import 'package:lvlup/domain/entity/task_model.dart';
+import 'package:todoLvlup/domain/data_providers/task_list_provider.dart';
+import 'package:todoLvlup/domain/entity/task_model.dart';
 
 class TasksListService {
   List _tasks = [];

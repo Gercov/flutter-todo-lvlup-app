@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'package:lvlup/domain/services/tasks_list_service.dart';
+import 'package:todoLvlup/domain/services/tasks_list_service.dart';
 
 class CreateViewModelState {
   final String taskText;
