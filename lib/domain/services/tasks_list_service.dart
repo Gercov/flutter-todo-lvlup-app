@@ -34,13 +34,10 @@ class TasksListService {
     return TaskModel(text: text, score: score, id: id);
   }
 
-  bool createTask(String text, String score) {
+  bool createTask(String text, int score) {
     try {
-      if (text.isEmpty || score.isEmpty) return false;
-
-      int parsedScore = int.parse(score);
-
-      final newTaskModel = createTaskModel(text, parsedScore);
+      if (text.isEmpty) throw Error();
+      final newTaskModel = createTaskModel(text, score);
       _tasks = [newTaskModel, ..._tasks];
       _taskListDataProvider.saveTask(_tasks);
       _streamTasksController.add(_tasks);
