@@ -11,6 +11,14 @@ class CreateViewModelState {
   final String taskText;
   final int taskScore;
 
+  bool get createButtonIsActive {
+    if (taskText.isEmpty) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   CreateViewModelState({
     this.taskText = '',
     this.taskScore = 10,
@@ -35,6 +43,7 @@ class CreateViewModel extends ChangeNotifier {
 
   void onInputTaskTextField(String value) {
     _state = _state.copyWith(taskText: value);
+    notifyListeners();
   }
 
   void onInputTaskScoreField(int value) {
@@ -181,14 +190,17 @@ class _CreateCreateButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final createTask = context.watch<CreateViewModel>().onPressedCreateButton;
+    final model = context.watch<CreateViewModel>();
+    final onPressed = model.state.createButtonIsActive
+        ? () => model.onPressedCreateButton(context)
+        : null;
 
     return SizedBox(
       width: 100,
       height: 50,
       child: ElevatedButton(
         child: const Text('Создать'),
-        onPressed: () => createTask(context),
+        onPressed: onPressed,
       ),
     );
   }
