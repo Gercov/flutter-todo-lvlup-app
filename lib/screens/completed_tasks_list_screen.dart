@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:todoLvlup/widgets/items_list_widget.dart';
 import 'package:provider/provider.dart';
 import 'package:todoLvlup/domain/services/tasks_list_service.dart';
+import 'package:todoLvlup/widgets/items_list_widget.dart';
 
 class CompletedTasksListViewModelState {
   List tasks;
