@@ -61,8 +61,26 @@ class _View extends StatelessWidget {
   Widget build(BuildContext context) {
     final tasksList = context.watch<CompletedTasksListViewModel>().state.tasks;
 
-    return ItemsListWidget(
-      tasksList: tasksList,
+    return tasksList.isNotEmpty
+        ? ItemsListWidget(
+            tasksList: tasksList,
+          )
+        : const _PlugTextWidget();
+  }
+}
+
+class _PlugTextWidget extends StatelessWidget {
+  const _PlugTextWidget({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text(
+        'У вас нет выполненных задач',
+        style: TextStyle(
+          fontSize: 17,
+        ),
+      ),
     );
   }
 }

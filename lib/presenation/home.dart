@@ -55,6 +55,7 @@ class _AppBar extends StatelessWidget with PreferredSizeWidget {
 
     return AppBar(
       title: Text(tabOptions[selectedIndexTab].name),
+      centerTitle: true,
     );
   }
 
